@@ -1,0 +1,102 @@
+.about-us {
+  margin: -125px auto 0;
+  padding-bottom: 35px;
+  padding-top: 50px;
+  position: relative;
+
+  @include breakpoint('lg'){
+    margin: -90px auto 0;
+  }
+
+  @include breakpoint('md'){
+    margin: -80px auto 0;
+  }
+
+  @include breakpoint('sm'){
+    margin: -70px auto 0;
+  }
+
+  @include breakpoint('xs'){
+    margin: 0 auto 0;
+    padding-top: 20px;
+  }
+
+  .content-container {
+    //float: left;
+    position: relative;
+    //width: 63%;
+    @include breakpoint('lg'){
+      //width: 66%;
+    }
+    @include breakpoint('md'){
+      //width: 64%;
+    }
+    @include breakpoint('xs'){
+      float: none;
+      width: 100%;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 4.6em;
+      font-size: 46px;
+      font-family: $Roboto-Light;
+      font-weight: 100;
+      margin: 0 0 17px;
+      @include breakpoint('lg'){
+        font-size: 3.6em;
+        font-size: 36px;
+        margin: 0 0 14px;
+      }
+      @include breakpoint('md'){
+        padding-top: 10px;
+      }
+      @include breakpoint('sm'){
+        font-size: 2.2em;
+        font-size: 22px;
+      }
+      @include breakpoint('xs'){
+        font-size: 1.6em;
+        font-size: 16px;
+        margin: 10px 0;
+        text-align: center;
+      }
+    }
+    p {
+      margin: 0 0 8px;
+      &#About-Us{
+        padding-top: 7px;
+        @include breakpoint('xs'){
+          padding-top: 0;
+        }
+      }
+    }
+  }
+  .image-container {
+    float: right;
+    margin-top: 5px;
+    width: 30%;
+    @include breakpoint('lg') {
+      margin-top: 0;
+    }
+    @include breakpoint('md'){
+      width: 33%;
+    }
+    @include breakpoint('xs'){
+      float: none;
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    img {
+      cursor: pointer;
+      display: inline-block;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+}

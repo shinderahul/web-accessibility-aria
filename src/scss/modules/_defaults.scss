@@ -1,0 +1,93 @@
+@include selection($selection-bg: #333, $selection-c: #fff, $selection-ts: none);
+* {
+  box-sizing: border-box;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+html {
+  font-size: 10px;
+}
+body {
+  color: $primary-color-1;
+  background-color: #fff;
+  font-family: $Roboto-Regular;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  padding: 117px 0 0;
+  @include breakpoint('lg') {
+    padding: 77px 0 0;
+    line-height: 1.25;
+  }  
+  @include breakpoint('xs') {
+    padding: 35px 0 0;
+  }  
+}
+.container {
+  margin: 0 auto;
+  max-width: 1720px;
+  width: 90%;
+}
+
+p {
+  font-size: 2em;
+  font-size: 20px;
+  margin: 0 0 8px;  
+
+  @include breakpoint('lg') {
+    font-size: 1.6em;
+    font-size: 16px;
+    margin: 0 0 8px;
+  }  
+  @include breakpoint('sm') {
+    font-size: 1.2em;
+    font-size: 12px;
+    margin: 0 0 8px;
+  }
+}
+
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255,255,255,0.8);
+  z-index: 999;
+  
+  .popup {
+    margin: 10% auto 0;
+    position: relative;
+    text-align: center;
+    max-width: 800px;
+    width: 90%;
+
+    video {
+      width: 100%;
+    }
+
+    img {
+      cursor: pointer;
+      position: absolute;
+      right: -14px;
+      top: -14px;
+    }
+  }  
+}
+
+
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: $primary-color-2;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: $primary-color-2;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: $primary-color-2;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: $primary-color-2;
+}

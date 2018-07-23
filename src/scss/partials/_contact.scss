@@ -1,0 +1,277 @@
+.call-us {
+  background-color: $section-background-2;
+  text-align: center;
+
+  p {
+    color: $primary-color-2;
+    font-size: 7em;
+    font-size: 70px;
+    padding: 34px 0 35px;
+    margin: 0;
+    text-transform: uppercase;
+
+    @include breakpoint('lg') {
+      font-size: 5.4em;
+      font-size: 54px;
+      padding: 15px 0 17px;
+    }
+
+    @include breakpoint('md') {
+      font-size: 4.2em;
+      font-size: 42px;      
+    }
+
+    @include breakpoint('sm') {
+      font-size: 3.2em;
+      font-size: 32px;
+      padding: 20px 0;
+    }
+    @include breakpoint('xs') {
+      font-size: 1.4em;
+      font-size: 14px;
+      padding: 20px 0;
+    }
+
+    span {
+      font-family: $Roboto-Bold;
+      
+      &.divider {
+        font-family: $Roboto-Black;
+        margin: 0 5px;
+      }
+    }
+
+    a {
+      color: $primary-color-2;
+      text-decoration: none;
+    }
+  }
+}
+
+.contact-container {
+  padding: 0 0 53px;
+  text-align: center;
+
+  @include breakpoint('lg') {
+    padding: 0 0 28px;
+  }
+
+  h1 {
+    font-size: 4.6em;
+    font-size: 46px;
+    font-family: $Roboto-Light;
+    font-weight: 100;
+    margin: 0;
+    padding: 60px 0 16px;
+    text-transform: uppercase;
+
+    @include breakpoint('lg') {
+      font-size: 3.6em;
+      font-size: 36px;
+      padding: 18px 0 7px;
+    }
+    @include breakpoint('sm') {
+      font-size: 2.2em;
+      font-size: 22px;
+    }
+    @include breakpoint('xs') {
+      font-size: 1.6em;
+      font-size: 16px;
+    }
+  }
+}
+
+.contact {
+  //background: url('../img/contact.jpg') no-repeat top center;
+  //background-size: 100%;
+  min-height: 850px;
+  position: relative;
+  overflow: hidden;
+
+  @include breakpoint('lg') {
+    min-height: 600px;
+  }
+  @include breakpoint('sm') {
+    min-height: 450px;
+  }
+  @include breakpoint('xs') {
+    min-height: 400px;
+  }
+
+  h1 {
+    color: $primary-color-2;
+    font-family: $Roboto-Light;
+    font-size: 4.6em;
+    font-size: 46px;
+    font-weight: 100;
+    margin: 0;
+    padding: 57px 0 46px;
+    text-align: center;
+    text-transform: uppercase;
+
+    @include breakpoint('lg') {
+      font-size: 3.6em;
+      font-size: 36px;
+      padding: 37px 0 34px;
+    }
+    @include breakpoint('sm') {
+      font-size: 2.3em;
+      font-size: 23px;
+      padding: 30px 0;
+    }
+    @include breakpoint('xs') {
+      font-size: 1.6em;
+      font-size: 16px;
+      padding: 20px 0;
+    }
+  }
+
+  .form-area {
+    margin: 0 auto;
+    max-width: 1240px;
+    position: relative;
+    width: 65%;
+    @include breakpoint('md') {
+      width: 80%;
+    }
+    @include breakpoint('sm') {
+      width: 88%;
+    }
+
+    p.success {
+      color: #078802;
+      display: none;
+      font-size: 2.4em;
+      font-size: 24px;
+      position: absolute;
+      top: -50px;
+      text-align: center;
+      width: 100%;
+      @include breakpoint('sm') {
+        top: -32px;
+        font-size: 2em;
+        font-size: 10px;
+      }
+      @include breakpoint('xs') {
+        top: -21px;
+        font-size: 1.4em;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .field-container {
+    margin: 0 0 28px;
+
+    @include breakpoint('lg') {
+      margin: 0 0 20px;
+    }
+    @include breakpoint('sm') {
+      margin: 0 0 15px;
+    }
+    
+    input, textarea {
+      border: 2px solid $primary-color-2;
+      background-color: transparent;
+      color: $primary-color-2;
+      font-family: $Roboto-Bold;
+      font-size: 2.4em;
+      font-size: 24px;
+      padding: 19px 25px 15px;
+      outline: 0;
+      width: 100%;
+
+      @include breakpoint('lg') {
+        font-size: 1.6em;
+        font-size: 16px;
+        padding: 15px 25px 10px;
+      }
+      @include breakpoint('sm') {
+        font-size: 1.2em;
+        font-size: 12px;
+        padding: 13px 20px 9px;
+      }
+      @include breakpoint('xs') {
+        font-size: 1em;
+        font-size: 10px;
+        padding: 10px 15px 7px;
+      }
+    }
+
+    input.err, textarea.err {
+      border: 2px solid #ff0000;
+    }
+
+    textarea {
+      height: 197px;
+
+      @include breakpoint('lg') {
+        height: 130px;
+      }
+      @include breakpoint('sm') {
+        height: 95px;
+      }
+      @include breakpoint('xs') {
+        height: 75px;
+      }
+      
+    }
+  }
+
+
+  .submit {
+    padding-top: 22px;
+    text-align: right;
+    @include breakpoint('lg') {
+      padding-top: 15px;
+    }
+    @include breakpoint('sm') {
+      padding-top: 5px;
+    }
+
+    input {
+      background: transparent;
+      border: 2px solid $primary-color-2;
+      cursor: pointer;
+      color: $primary-color-2;
+      display: inline-block;
+      font-family: $Roboto-Bold;
+      font-size: 3.3em;
+      font-size: 33px;
+      font-weight: 100;
+      margin: 0;
+      outline: 0;
+      padding: 13px 26px;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+
+      transition: all 0.5s ease;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+
+      @include breakpoint('lg') {
+        font-size: 2.2em;
+        font-size: 22px;
+        padding: 10px 17px;
+      }
+      @include breakpoint('lg') {
+        font-size: 1.6em;
+        font-size: 16px;
+        padding: 7px 15px;
+      }
+      @include breakpoint('lg') {
+        font-size: 1.4em;
+        font-size: 14px;
+        padding: 6px 12px;
+      }
+
+      &:hover {
+        background-color: #108943;
+      }
+    }
+  }
+}
+

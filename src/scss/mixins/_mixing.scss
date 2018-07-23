@@ -1,0 +1,42 @@
+// border radius
+@mixin borderRadius($radius: 0) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+// box sizing border-box
+@mixin boxSizing($sizing: border-box) {
+  -webkit-box-sizing: $sizing;
+  -moz-box-sizing: $sizing;
+  -ms-box-sizing: $sizing;
+  box-sizing: $sizing;
+}
+
+@mixin boxShadow($color: #000 , $distance: 1px, $spread: 2px, $size:5px) {
+  box-shadow: $distance $spread $size $color;
+  -moz-box-shadow: $distance $spread $size $color;
+  -webkit-box-shadow: $distance $spread $size $color;
+  -ms-box-shadow: $distance $spread $size $color;
+  -o-box-shadow: $distance $spread $size $color;
+}
+
+// media query breakpoints
+@mixin breakpoint($point) {
+  @if $point == 'xs' {
+    @media screen and (max-width: 767px) { @content ; }
+  }
+  @else if $point == 'sm' {
+    @media screen and (max-width: 991px) { @content ; }
+  }
+  @else if $point == 'md' {
+    @media screen and (max-width: 1199px)  { @content ; }
+  }
+  @else if $point == 'lg' {
+    @media screen and (max-width: 1499px)  { @content ; }
+  }
+  @else if $point == 'xl' {
+    @media screen and (min-width: 1700px)  { @content ; }
+  }
+}
